@@ -1,0 +1,590 @@
+@font-face{
+    font-family: 'baloo2';
+    src: url('../font/baloo_2/Baloo2-Medium.ttf');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'baloo2';
+    margin: 0;
+}
+
+/*===================== NAVBAR & PAGE PERTAMA =========================*/
+.section1{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../image/BG-min.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+nav{
+    z-index: 9;
+    background-color: #eafff6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    margin-left: 20px;
+    position: relative;
+    max-width: 200px;
+}
+
+nav ul{
+    position: relative;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: #00ca72;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger{
+    display: none;
+    position: absolute;
+    right: 5%;
+    transform: translate(-50%);
+}
+
+nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: #00ca72;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+.content{
+    width: 100%;
+    text-align: center;
+}
+
+.content #anim{
+    width: 100%;
+}
+
+.content img{
+    position: unset;
+}
+
+.content h1{
+    color: #00ca72;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: unset;
+}
+
+.content p{
+    margin-bottom: 50px;
+}
+
+.main-illustration{
+    position: absolute;
+    width: 60%;
+    margin-top: 20%;
+    top: -15%;
+}
+
+/*===================== PAGE II =========================*/
+.section2{
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    background-color: #eafff6;
+}
+
+.why-head h1{
+    padding: 20px;
+    color: #00ca72;
+    text-align: center;
+    font-size: 36px;
+    margin-top: unset;
+}
+
+.why-content{
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.why-illustration{
+    padding-top: 25px;
+    width: 60%;
+    height: 100%;
+    display: block;
+}
+
+.why-column{
+    margin: 20px;
+    float: left;
+    padding: 0;
+    width: 100%;
+    display: flex;
+}
+
+.why-row{
+    margin: 0;
+    display: flex;
+}
+
+.why-row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.why-card{
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.why-image{
+    width: 40%;
+}
+
+/*===================== PAGE III =========================*/
+.section3{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b8ffe0;
+}
+
+.price-head h1{
+    padding: 20px;
+    color: #00ca72;
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+}
+
+.price-card{
+    align-items: center;
+}
+
+.price-row{
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+.price-column{
+    background-color: white;
+    width: 33.3%;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.price-column h1{
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    color: #00ca72;
+}
+
+.price-content table{
+    color: #00ca72;
+}
+
+.price-list td, .price-list tr{
+    padding: 5px;
+}
+
+.price-list tr:nth-child(even){
+    background-color: white;
+}
+
+.price-list tr:hover{
+    background-color: #00ca72;
+    color: white;
+}
+
+.price-list th{
+    padding: 10px;
+    color: white;
+    background-color: #00ca72;
+}
+
+.wisuda-title{
+    width: 100%;
+}
+
+.wisuda-title h1{
+    color: #00ca72;
+    text-align: center;
+    font-size: 36px;
+}
+
+.col-wisuda{
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.toga{
+    display: block;
+}
+
+.toga i {
+    color: #00ca72;
+}
+
+.fas{
+    font-size: 75px;
+}
+
+.toga button{
+    border: 2px solid #00ca72;
+    font-family: 'baloo2';
+    color: #00ca72;
+    font-size: 16px;
+    background-color: #b8ffe0;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.toga button:hover{
+    color: white;
+    background-color: #00ca72;
+    transition: 0.5s;
+}
+
+.toga p{
+    margin-bottom: unset;
+    padding-bottom: 20px;
+}
+
+/*===================== PAGE IV =========================*/
+.section4{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eafff6;
+}
+
+.testimonials{
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial{
+    padding: 30px;
+    padding-top: 20px;
+    background: #00ca72;
+    border-radius: 20px;
+    color: white;
+}
+
+.testimonials h1{
+    color: #00ca72;
+    font-size: 36px;
+}
+
+.testi-head-card{
+    display: flex;
+}
+
+.testimonial  .profile-testi{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: white;
+}
+
+.testimonial p{
+    margin-top: 0px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.screenshot{
+    margin-top: 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*===================== PAGE V =========================*/
+.section5{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #b8ffe0;
+}
+
+.booking-head{
+    color: #00ca72;
+    padding: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.col-booking{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.whatsapp{
+    display: block;
+    color: #00ca72;
+}
+
+.whatsapp button{
+    border: 2px solid #00ca72;
+    font-family: 'baloo2';
+    color: #00ca72;
+    font-size: 16px;
+    background-color: #b8ffe0;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.whatsapp button:hover{
+    color: white;
+    background-color: #00ca72;
+    transition: 0.5s;
+}
+
+.call-message{
+    display: flex;
+    color: #00ca72;
+}
+
+.far{
+    font-size: 75px;
+    margin-left: 80px;
+    margin-right: 20px;
+    padding-bottom: 100px;
+}
+
+.fab{
+    font-size: 75px;
+}
+
+.wisata{
+    display: block;
+}
+
+.fas{
+    font-size: 75px;
+}
+
+/*===================== PAGE V =========================*/
+.footer{
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 10%;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    background-color: #00ca72;
+}
+
+.header-footer{
+    color: white;
+    width: 50%;
+    padding-right: 10%;
+}
+
+.socmed-contact{
+    padding-left: 25%;
+}
+
+.socmed-contact ul{
+    list-style: none;
+    margin-top: 50px;
+}
+
+.socmed-contact ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.socmed-contact ul li a:hover{
+    text-decoration: underline;
+}
+
+/*================== UNTUK KERAPIAN RESPONSIVE HARUS SELALU DIBAWAH!! ==================*/
+@media screen and (max-device-width: 420px){
+    body{
+        width: 100%;
+    }
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav .links{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: none;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .3s ease-in-out;
+    }
+
+    nav .links a {
+		font-size: 20px;
+	}
+
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+
+	nav .icon-burger {
+		display: block;
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+
+    .why-image{
+        display: none;
+    }
+
+    .why-row{
+        display: inline-block;
+        margin-left: 30%;
+    }
+
+    .price-row{
+        display: block;
+    }
+
+    .price-column{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #word-only{
+        display: none;
+    }
+
+    .col{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .testimonial{
+        min-width: rem-calc(640);
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .header-footer{
+        min-width: 100%;
+    }
+
+    .socmed-contact{
+        min-width: 100%;
+        padding: unset;
+    }
+}
